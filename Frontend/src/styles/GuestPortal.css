@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc8 100%);
+  min-height: 100vh;
+}
+
+.guest-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wedding-header {
+  text-align: center;
+  margin-bottom: 40px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.monogram {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.wedding-header h1 {
+  color: #2d5016;
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.wedding-header .date {
+  color: #6b8e23;
+  font-size: 1.2em;
+}
+
+.now-playing-section {
+  background: linear-gradient(135deg, #2d5016 0%, #4a7023 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.now-playing h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.song-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.artist {
+  font-size: 1.1em;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.song-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.song-form h2 {
+  color: #2d5016;
+  margin-bottom: 20px;
+}
+
+.song-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #d4af37;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+.song-form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #2d5016 0%, #4a7023 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.song-form button:hover {
+  transform: scale(1.05);
+}
+
+.message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.message.success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.queue-section {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.queue-section h2 {
+  color: #2d5016;
+  margin-bottom: 20px;
+}
+
+.queue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.queue-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background: #f5f1e8;
+  border-left: 4px solid #2d5016;
+  border-radius: 5px;
+}
+
+.queue-number {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2d5016;
+  min-width: 30px;
+  text-align: center;
+}
+
+.song-info {
+  flex: 1;
+}
+
+.requested-by {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .wedding-header h1 {
+    font-size: 1.8em;
+  }
+  
+  .monogram {
+    font-size: 40px;
+  }
+}
